@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="543.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFromController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c1935" height="72.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="407.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" prefHeight="65.0" prefWidth="406.0" text="Clothify Store" textFill="#0a0a0a" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Britannic Bold" size="37.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="84.0" layoutY="95.0" onAction="#btnAdminOnAction" prefHeight="34.0" prefWidth="79.0" ripplerFill="BLACK" styleClass="btn" stylesheets="@../css/style.css" text="Admin" />
+        <JFXButton layoutX="233.0" layoutY="95.0" onAction="#btnEmployeeOnAction" prefHeight="34.0" prefWidth="79.0" ripplerFill="BLACK" styleClass="btn" stylesheets="@../css/style.css" text="Employee" />
+        <AnchorPane fx:id="loadFormContent" layoutX="7.0" layoutY="143.0" prefHeight="400.0" prefWidth="399.0" />
+    </children>
+</AnchorPane>
