@@ -21,8 +21,9 @@ public class LogingAdmin {
     @FXML
     void btnLogingOnAction(ActionEvent event) throws IOException {
         Stage stage = new Stage();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/adminLoging_from.fxml.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/admin_from.fxml"))));
         stage.show();
+
     }
 
     @FXML
