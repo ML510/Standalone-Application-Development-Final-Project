@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="390.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.supplier.SupplierFromController">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="400.0" prefWidth="584.0" style="-fx-background-color: #8CA9FF;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#082a4a" height="76.0" layoutX="-7.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <TextField fx:id="txtName" layoutX="145.0" layoutY="98.0" promptText="Name" />
+            <TextField fx:id="txtCompanyName" layoutX="145.0" layoutY="144.0" promptText="Company Name" />
+            <TextField fx:id="txtPrice" layoutX="346.0" layoutY="144.0" promptText="Price" />
+            <Label alignment="CENTER" layoutX="-3.0" prefHeight="76.0" prefWidth="594.0" text="Supplier From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="363.0" layoutY="186.0" onAction="#btnSearchOnAction" style="-fx-background-color: #26CCC2;" stylesheets="@../css/style.css" text="Search" />
+            <JFXButton layoutX="421.0" layoutY="186.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #26CCC2;" text="Delete" />
+            <JFXButton layoutX="480.0" layoutY="186.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #26CCC2;" text="Update" />
+            <JFXButton layoutX="542.0" layoutY="186.0" onAction="#btnAddOnAction" style="-fx-background-color: #FFB76C;" text="Add" />
+            <TableView fx:id="tblSupplier" layoutX="8.0" layoutY="219.0" prefHeight="128.0" prefWidth="579.0" stylesheets="@../css/style.css">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="77.0" text="ID" />
+                  <TableColumn fx:id="colName" prefWidth="131.5" text="Name" />
+                  <TableColumn fx:id="colWeight" prefWidth="97.5" text="Supplier Weight" />
+                  <TableColumn fx:id="colCompName" prefWidth="169.5" text="Company Name" />
+                  <TableColumn fx:id="colPrice" prefWidth="102.5" text="Price" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="510.0" layoutY="355.0" onAction="#btnReloadOnAction" style="-fx-background-color: #FF0087;" text="Reload" />
+            <TextField fx:id="txtSuppweight" layoutX="346.0" layoutY="98.0" promptText="Supp Weight" />
+            <JFXComboBox fx:id="cmbSupplierId" focusColor="BLACK" layoutX="29.0" layoutY="98.0" unFocusColor="#171717" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
