@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.employeeDashFrom">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FEFFC4;">
+         <children>
+            <JFXButton layoutX="23.0" layoutY="123.0" onAction="#btnOrderOnAction" prefHeight="45.0" prefWidth="130.0" style="-fx-background-color: #EE2835;" text="Order From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="23.0" layoutY="201.0" onAction="#btnSupperOnAction" prefHeight="45.0" prefWidth="130.0" style="-fx-background-color: #799EFF;" text="Supplier From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="23.0" layoutY="283.0" onAction="#btnItemOnAction" prefHeight="45.0" prefWidth="130.0" style="-fx-background-color: #799EFF;" text="Item From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="23.0" layoutY="368.0" onAction="#btnCustomerOnAction" prefHeight="45.0" prefWidth="130.0" style="-fx-background-color: #799EFF;" text="Customer From" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5efe6" height="34.0" layoutX="-2.0" layoutY="31.0" stroke="#f5efe6" strokeType="INSIDE" width="301.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#91c4c3" height="34.0" layoutX="240.0" layoutY="-2.0" stroke="#91c4c3" strokeType="INSIDE" width="323.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8dfca" height="34.0" layoutX="290.0" layoutY="32.0" stroke="#e8dfca" strokeType="INSIDE" width="223.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4debd" height="34.0" layoutX="556.0" layoutY="-2.0" stroke="#b4debd" strokeType="INSIDE" width="230.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6d94c5" height="34.0" layoutX="511.0" layoutY="32.0" stroke="#6d94c5" strokeType="INSIDE" width="275.0" />
+            <AnchorPane fx:id="loadEmployee" layoutX="167.0" layoutY="76.0" prefHeight="392.0" prefWidth="619.0" />
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="67.0" prefWidth="786.0" text="Employee From">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
